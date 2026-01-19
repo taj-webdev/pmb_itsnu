@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteBase /pmb_itsnu/public/
+
+# Allow direct file access
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# Allow folder access
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Otherwise, route all to index.php
+RewriteRule ^ index.php [L]

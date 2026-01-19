@@ -1,0 +1,12 @@
+# ========== FORCE PUBLIC FOLDER ==========
+RewriteEngine On
+RewriteBase /pmb_itsnu/
+
+# Jika file atau folder TIDAK ada, arahkan ke /public
+RewriteCond %{REQUEST_URI} !^/pmb_itsnu/public/
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ /pmb_itsnu/public/$1 [L]
+
+# Blok akses folder yang tidak boleh diakses publik
+RedirectMatch 403 ^/pmb_itsnu/(config|database|assets|vendor|includes)/.*
