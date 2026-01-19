@@ -1,8 +1,4 @@
 # pmb_itsnu
 SYSTEM PENERIMAAN MAHASISWA BARU (PMB) PADA ITS-NU KALIMANTAN TENGAH BERBASIS WEB PHP MySQL
 
-PHP 8.2
-Native
-MySQL (Database)
-XAMPP
-Tailwind CSS
+PHP 8.2 || Native || MySQL (Database) || XAMPP || Tailwind CSS
